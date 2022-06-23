@@ -1,3 +1,5 @@
+# 방문 길이
+
 def solution(dirs):
     # 방향에 따른 증감값 설정
     d_info = {"U":[0,1],"R":[1,0],"D":[0,-1],"L":[-1,0]}
@@ -26,3 +28,9 @@ def solution(dirs):
       loc = loc_temp
 
     return len(paths)-1
+
+dirs = "ULURRDLLU"
+# dirs = "LULLLLLLU"
+dirs = "UUUUDUDUDUUU"
+# dirs = 'LRLRLUDUD'
+solution(dirs)
